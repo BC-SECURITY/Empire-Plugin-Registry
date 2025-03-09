@@ -1,0 +1,89 @@
+schema_version: 1
+plugins:
+  - name: Report Generation Plugin
+    homepage_url: https://github.com/BC-SECURITY/Report-Generation-Plugin
+    source_url: https://github.com/BC-SECURITY/Report-Generation-Plugin
+    authors:
+      - name: Anthony Rose
+        handle: '@Cx01N'
+        link: https://twitter.com/Cx01N_
+    description: Generate enhanced reports and markdown files for customized PDF reports
+    versions:
+      - name: '1.0.0'
+        git_url: git@github.com:BC-SECURITY/Report-Generation-Plugin
+        ref: '6.0'
+  - name: ChiselServer Plugin
+    homepage_url:  https://github.com/BC-SECURITY/ChiselServer-Plugin
+    source_url: https://github.com/BC-SECURITY/ChiselServer-Plugin/
+    authors:
+      - name: Kevin Clark
+        link: https://twitter.com/GuhnooPlusLinux
+        handle: '@kevin'
+    description: |
+      Chisel server for invoke_sharpchisel module.
+      Requires: chisel server binaries to be placed in the data/misc directory with
+      names chiselserver_linux and chiselserver_macos
+      Refer to [KevinJClark/invoke-sharpchisel](https://gitlab.com/KevinJClark/invoke-sharpchisel/) for more information.
+    versions:
+      - name: '1.0.0'
+        git_url: git@github.com:BC-SECURITY/ChiselServer-Plugin
+        ref: '6.0'
+  - name: SocksProxyServer Plugin
+    homepage_url: https://github.com/BC-SECURITY/SocksProxyServer-Plugin
+    source_url: https://github.com/BC-SECURITY/SocksProxyServer-Plugin
+    authors:
+      - name: Anthony Rose
+        handle: '@Cx01N'
+        link: https://twitter.com/Cx01N_
+      - name:
+        handle: '@mjokic'
+        link:
+    description: Launches a Socks Proxy Server to run in the background of Empire.
+    versions:
+      - name: '1.0.0'
+        git_url: git@github.com:BC-SECURITY/SocksProxyServer-Plugin
+        ref: '6.0'
+  - name: Twilio Plugin
+    homepage_url: https://github.com/bc-security/twilio-plugin
+    source_url: https://github.com/bc-security/twilio-plugin
+    authors:
+      - name: Vincent Rose
+        handle: "@vinnybod"
+        link: "https://github.com/vinnybod"
+    description: |
+      The Twilio Plugin is meant to showcase the event-based features of Empire plugins.
+      It sends a text message every time an agent connects.
+    versions:
+      - name: '1.0.0'
+        git_url: git@github.com:BC-SECURITY/twilio-plugin
+        ref: '6.0'
+  - name: DeathStar Plugin
+    homepage_url: https://github.com/BC-SECURITY/DeathStarPlugin
+    source_url: https://github.com/BC-SECURITY/DeathStarPlugin
+    authors:
+      - name: Anthony Rose
+        handle: '@Cx01N'
+        link: 'https://twitter.com/Cx01N_'
+    description: |
+      Deathstar is an [Empire](https://github.com/BC-SECURITY/Empire) plugin that is an adaption of
+      [DeathStar](https://github.com/byt3bl33d3r/DeathStar) that automates gaining Domain and/or
+      Enterprise Admin rights in Active Directory environments using common offensive tactics,
+      techniques, and procedures (TTPs).
+    versions:
+      - name: '1.0.0'
+        git_url:  git@github.com:BC-SECURITY/DeathStarPlugin
+        ref: '6.0'
+  - name: Websockify Plugin
+    homepage_url: https://github.com/BC-SECURITY/Websockify-Plugin
+    source_url: https://github.com/BC-SECURITY/Websockify-Plugin
+    authors:
+      - name: Anthony Rose
+        handle: '@Cx01N'
+        link: 'https://twitter.com/Cx01N_'
+    description: |
+      The websockify plugin opens up a [websockify](https://github.com/novnc/websockify)
+      server which can be used with [noVNC](https://github.com/novnc/noVNC)
+    versions:
+      - name: '1.0.0'
+        git_url:  git@github.com:BC-SECURITY/Websockify-Plugin
+        ref: '6.0'
