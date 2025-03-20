@@ -13,7 +13,7 @@ plugins:
         git_url: https://github.com/BC-SECURITY/Report-Generation-Plugin
         ref: '6.0'
   - name: ChiselServer Plugin
-    homepage_url:  https://github.com/BC-SECURITY/ChiselServer-Plugin
+    homepage_url: https://github.com/BC-SECURITY/ChiselServer-Plugin
     source_url: https://github.com/BC-SECURITY/ChiselServer-Plugin/
     authors:
       - name: Kevin Clark
@@ -71,7 +71,7 @@ plugins:
       techniques, and procedures (TTPs).
     versions:
       - name: '1.0.0'
-        git_url:  https://github.com/BC-SECURITY/DeathStarPlugin
+        git_url: https://github.com/BC-SECURITY/DeathStarPlugin
         ref: '6.0'
   - name: Websockify Plugin
     homepage_url: https://github.com/BC-SECURITY/Websockify-Plugin
@@ -85,5 +85,5 @@ plugins:
       server which can be used with [noVNC](https://github.com/novnc/noVNC)
     versions:
       - name: '1.0.0'
-        git_url:  https://github.com/BC-SECURITY/Websockify-Plugin
+        git_url: https://github.com/BC-SECURITY/Websockify-Plugin
         ref: '6.0'
