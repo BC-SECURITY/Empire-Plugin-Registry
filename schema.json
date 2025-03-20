@@ -1,0 +1,149 @@
+{
+    "$defs" : {
+      "EmpireAuthor" : {
+        "properties" : {
+          "name" : {
+            "anyOf" : [ {
+              "type" : "string"
+            }, {
+              "type" : "null"
+            } ],
+            "default" : "",
+            "title" : "Name"
+          },
+          "handle" : {
+            "anyOf" : [ {
+              "type" : "string"
+            }, {
+              "type" : "null"
+            } ],
+            "default" : "",
+            "title" : "Handle"
+          },
+          "link" : {
+            "anyOf" : [ {
+              "type" : "string"
+            }, {
+              "type" : "null"
+            } ],
+            "default" : "",
+            "title" : "Link"
+          }
+        },
+        "title" : "EmpireAuthor",
+        "type" : "object"
+      },
+      "PluginRegistryPlugin" : {
+        "properties" : {
+          "name" : {
+            "title" : "Name",
+            "type" : "string"
+          },
+          "homepage_url" : {
+            "anyOf" : [ {
+              "type" : "string"
+            }, {
+              "type" : "null"
+            } ],
+            "default" : null,
+            "title" : "Homepage Url"
+          },
+          "source_url" : {
+            "anyOf" : [ {
+              "type" : "string"
+            }, {
+              "type" : "null"
+            } ],
+            "default" : null,
+            "title" : "Source Url"
+          },
+          "authors" : {
+            "default" : [ ],
+            "items" : {
+              "$ref" : "#/$defs/EmpireAuthor"
+            },
+            "title" : "Authors",
+            "type" : "array"
+          },
+          "versions" : {
+            "default" : [ ],
+            "items" : {
+              "$ref" : "#/$defs/PluginRegistryPluginVersion"
+            },
+            "title" : "Versions",
+            "type" : "array"
+          },
+          "description" : {
+            "title" : "Description",
+            "type" : "string"
+          }
+        },
+        "required" : [ "name", "description" ],
+        "title" : "PluginRegistryPlugin",
+        "type" : "object"
+      },
+      "PluginRegistryPluginVersion" : {
+        "properties" : {
+          "git_url" : {
+            "anyOf" : [ {
+              "type" : "string"
+            }, {
+              "type" : "null"
+            } ],
+            "default" : null,
+            "title" : "Git Url"
+          },
+          "tar_url" : {
+            "anyOf" : [ {
+              "type" : "string"
+            }, {
+              "type" : "null"
+            } ],
+            "default" : null,
+            "title" : "Tar Url"
+          },
+          "subdirectory" : {
+            "anyOf" : [ {
+              "type" : "string"
+            }, {
+              "type" : "null"
+            } ],
+            "default" : null,
+            "title" : "Subdirectory"
+          },
+          "ref" : {
+            "anyOf" : [ {
+              "type" : "string"
+            }, {
+              "type" : "null"
+            } ],
+            "default" : null,
+            "title" : "Ref"
+          },
+          "name" : {
+            "title" : "Name",
+            "type" : "string"
+          }
+        },
+        "required" : [ "name" ],
+        "title" : "PluginRegistryPluginVersion",
+        "type" : "object"
+      }
+    },
+    "properties" : {
+      "schema_version" : {
+        "title" : "Schema Version",
+        "type" : "integer"
+      },
+      "plugins" : {
+        "items" : {
+          "$ref" : "#/$defs/PluginRegistryPlugin"
+        },
+        "title" : "Plugins",
+        "type" : "array"
+      }
+    },
+    "required" : [ "schema_version", "plugins" ],
+    "title" : "PluginRegistry",
+    "type" : "object"
+  }
