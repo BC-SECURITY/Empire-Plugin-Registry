@@ -9,9 +9,9 @@ plugins:
         link: https://twitter.com/Cx01N_
     description: Generate enhanced reports and markdown files for customized PDF reports
     versions:
-      - name: '2.0.0'
+      - name: '3.0.0'
         git_url: https://github.com/BC-SECURITY/Report-Generation-Plugin
-        ref: '381475a5b6bfba18ade108f075878f72ed565fc2'
+        ref: 'f4e7471d9bccae652e4a1ce3851044509c3618eb'
   - name: ChiselServer Plugin
     homepage_url: https://github.com/BC-SECURITY/ChiselServer-Plugin
     source_url: https://github.com/BC-SECURITY/ChiselServer-Plugin/
@@ -25,9 +25,9 @@ plugins:
       names chiselserver_linux and chiselserver_macos
       Refer to [KevinJClark/invoke-sharpchisel](https://gitlab.com/KevinJClark/invoke-sharpchisel/) for more information.
     versions:
-      - name: '3.0.0'
+      - name: '4.0.0'
         git_url: https://github.com/BC-SECURITY/ChiselServer-Plugin
-        ref: 'daf26ab7704af0c3c3fe9d969a7e2d77c0d637ca'
+        ref: 'a67b2366792bda6460d07cefc0c641c638d05603'
   - name: SocksProxyServer Plugin
     homepage_url: https://github.com/BC-SECURITY/SocksProxyServer-Plugin
     source_url: https://github.com/BC-SECURITY/SocksProxyServer-Plugin
@@ -40,9 +40,9 @@ plugins:
         link:
     description: Launches a Socks Proxy Server to run in the background of Empire.
     versions:
-      - name: '3.0.0'
+      - name: '4.0.0'
         git_url: https://github.com/BC-SECURITY/SocksProxyServer-Plugin
-        ref: '3abbfeafe8d09734b09bfaa6b7b4ba446e87dc02'
+        ref: '62f8d261f0ffc5979fa94b0d54506568d130d76f'
   - name: Twilio Plugin
     homepage_url: https://github.com/bc-security/twilio-plugin
     source_url: https://github.com/bc-security/twilio-plugin
@@ -70,9 +70,9 @@ plugins:
       Enterprise Admin rights in Active Directory environments using common offensive tactics,
       techniques, and procedures (TTPs).
     versions:
-      - name: '1.0.0'
+      - name: '2.0.0'
         git_url: https://github.com/BC-SECURITY/DeathStarPlugin
-        ref: '2e184154e3e97c3e785f862ed869dd06b3584db9'
+        ref: 'c84b3d0e6916d5659b866d2f65bba10dbb0932a3'
   - name: Websockify Plugin
     homepage_url: https://github.com/BC-SECURITY/Websockify-Plugin
     source_url: https://github.com/BC-SECURITY/Websockify-Plugin
@@ -84,6 +84,6 @@ plugins:
       The websockify plugin opens up a [websockify](https://github.com/novnc/websockify)
       server which can be used with [noVNC](https://github.com/novnc/noVNC)
     versions:
-      - name: '1.0.0'
+      - name: '2.0.0'
         git_url: https://github.com/BC-SECURITY/Websockify-Plugin
-        ref: '43fc2288555352c328e03d320960a1fe3a260dcf'
+        ref: '0c9e75c9b7847d228bd1567d2e43e767f77b0991'

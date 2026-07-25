@@ -2,6 +2,17 @@
 
 Starkiller's plugin marketplace is backed by plugin registries. In particular, it defaults to this repository as the primary registry.
 
+## Branch layout
+
+Each Empire **major** line reads from its own `<major>.x` branch of this registry. Point releases within a major (7.0, 7.1, …) all share that branch. An Empire release pins its registry branch in `config.yaml`, and that pin can never change once the release ships — so every release line has a permanent, dedicated branch:
+
+| Empire line | Registry branch |
+| ----------- | --------------- |
+| 6.x         | `main`          |
+| 7.x         | `7.x`           |
+
+`main` is **not** "latest" — it is the branch that already-shipped 6.x installs are pinned to, so it must stay on 6.x-compatible plugin refs. A new major line always gets a new `<major>.x` branch; never repoint a shipped release at `main`.
+
 To submit a plugin, open a PR updating `registry.yaml` with the new plugin.
 
 To add new versions of a plugin, open a PR updating the `versions` list in the plugin's entry.
