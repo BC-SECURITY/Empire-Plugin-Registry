@@ -87,3 +87,20 @@ plugins:
       - name: '2.0.0'
         git_url: https://github.com/BC-SECURITY/Websockify-Plugin
         ref: '0c9e75c9b7847d228bd1567d2e43e767f77b0991'
+  - name: MCP Plugin
+    homepage_url: https://github.com/BC-SECURITY/Empire-MCP-Plugin
+    source_url: https://github.com/BC-SECURITY/Empire-MCP-Plugin
+    authors:
+      - name: Anthony Rose
+        handle: '@Cx01N'
+        link: 'https://twitter.com/Cx01N_'
+    description: |
+      Exposes Empire operations as [MCP](https://modelcontextprotocol.io) tools, so an
+      external client such as Claude Desktop can drive Empire directly. Also runs an
+      embedded LLM chat operator that answers to @empire-ai in Empire's chat channel.
+      Both surfaces share one tool registry and one audit trail, backed by Anthropic,
+      OpenRouter, or any OpenAI-compatible endpoint.
+    versions:
+      - name: '1.0.0'
+        git_url: https://github.com/BC-SECURITY/Empire-MCP-Plugin
+        ref: 'd50699bc5720ef1f1240faec6fa9f9ec689258b9'
